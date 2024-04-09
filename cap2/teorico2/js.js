@@ -95,3 +95,27 @@ for (let array in arrayDos) {
 }
 
 // FUNCIONES 
+
+function saludar (){    // forma primitiva de crear funciones
+    let nombre = prompt("Como te llamas?")
+    alert("Hola " + nombre)
+}
+
+let saludar2 = function(){  // otra manera primitiva de crear funciones
+    let nombre = prompt("Como te llamas?")
+    alert("Hola " + nombre)
+}
+
+const saludar3 = () => { // manera mas comun de crear funciones
+    let nombre = prompt("Como te llamas?")
+    alert("Hola " + nombre)
+}
+
+function suma (num1, num2) {    // la suma se va a realizar por los parametros que sean dados
+    let res = num1 + num2;
+    return(res) // deja como valor de la variable el resultado
+}
+console.log(suma(5, 10)) // se da valor a los parametros num1 y num2
+
+resultado = suma(2,3)
+console.log(resultado)
