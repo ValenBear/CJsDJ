@@ -1,14 +1,14 @@
 const funSuma = (num1, num2) => {
-    return (parseInt(num1) + parseInt(num2))
+    return (parseInt(num1) + parseInt(num2));
 }
 const funResta = (num1, num2) => {
-    return (parseInt(num1) - parseInt(num2))
+    return (parseInt(num1) - parseInt(num2));
 }
 const funMultiplicacion = (num1, num2) => {
-    return (parseInt(num1) * parseInt(num2))
+    return (parseInt(num1) * parseInt(num2));
 }
 const funDivision = (num1, num2) => {
-    return (parseInt(num1) / parseInt(num2))
+    return (parseInt(num1) / parseInt(num2));
 }
 
 const calculadora = () => {
@@ -17,20 +17,20 @@ Que operacion queres hacer?
 en caso de suma escribir "+"
 en caso de resta escribir "-"
 en caso de multiplicacion escribir "*"
-en caso de division escribir "/"`)
+en caso de division escribir "/"`);
     if (iniciarCalculadora == "+"){
-        let num1 = prompt("Primer numero que quieras sumar")
-        let num2 = prompt("Segundo numero que quieras sumar")
-        alert("el resultado es: " + funSuma(num1, num2))
+        let num1 = prompt("Primer numero que quieras sumar");
+        let num2 = prompt("Segundo numero que quieras sumar");
+        alert("el resultado es: " + funSuma(num1, num2));
         let restart = prompt(`
         queres volver a hacer una operacion?
         1 = Si
         2 = No
-        `)
+        `);
         if (restart == 1){
-            calculadora()
+            calculadora();
         } else {
-            alert("Que tengas un buen dia")
+            alert("Que tengas un buen dia");
         }
     }
     else if (iniciarCalculadora == "-"){
